@@ -1,0 +1,13 @@
+server:
+  port: 9098
+
+spring:
+  application:
+    name: rpc-server
+
+logging:
+  level:
+    com.rpc.demo: DEBUG
+    root: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

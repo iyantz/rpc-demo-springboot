@@ -1,0 +1,41 @@
+# Maven构建产物
+target/
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# IDE文件
+.idea/
+.vscode/
+*.iws
+*.iml
+*.ipr
+
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
+*.temp
+
+# Spring Boot
+spring-boot-*.log
+
+# 其他
+*.bak
+*.swp
+*.swo
+*~ 

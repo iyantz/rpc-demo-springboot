@@ -1,0 +1,18 @@
+server:
+  port: 9099
+
+spring:
+  application:
+    name: rpc-client
+
+rpc:
+  server:
+    host: localhost
+    port: 9999
+
+logging:
+  level:
+    com.rpc.demo: DEBUG
+    root: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
