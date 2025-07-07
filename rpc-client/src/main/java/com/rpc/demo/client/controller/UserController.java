@@ -1,9 +1,9 @@
 package com.rpc.demo.client.controller;
 
+import com.rpc.demo.common.annotation.RpcClient;
 import com.rpc.demo.common.dto.User;
 import com.rpc.demo.common.service.UserService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,7 +16,7 @@ import java.util.List;
 @RequestMapping("/users")
 public class UserController {
     
-    @Autowired
+    @RpcClient(interfaceClass = UserService.class, version = "1.0")
     private UserService userService;
     
     /**
